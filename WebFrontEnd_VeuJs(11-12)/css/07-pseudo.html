@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hover-element{
+            width: 200px;
+            background-color: blue;
+            height: 200px;
+            transition: all .5s ease-in-out;
+        }
+        .hover-element:hover{
+            transition: all .5s ease-in-out;
+            width: 100%;
+            color: pink;
+            height: 200px;
+            background-color: red;
+        }
+        input{
+            background-color: red;
+            transition: all .5s ease-in-out;
+        }
+        input:focus{
+            background-color: red;
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+        button{
+            transition: all .5s ease-in-out;
+        }
+
+        button:active{
+            background-color: red;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            margin: 10px;
+            color: white;
+            font-size: 18px;
+            transition: all .5s ease-in-out;
+        }
+        ul > li{
+            color: orange;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ul > li:first-child{
+            background-color: red;
+        }
+        ul > li:last-child{
+            background-color: pink;
+            color: black;
+        }
+        ul > li:nth-child(3){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Pseudo HTML</h1></center>
+    <hr>
+    <h1 class="hover-element">hover-element</h1>
+    <br><br>
+    
+    <input type="text" placeholder="Focus">
+
+    <button>Active Submit</button>
+    
+    <!-- :child -->
+     <!-- $ តំណាងដាក់លេខរៀង -->
+    
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+
+</body>
+</html>
